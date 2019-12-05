@@ -39,7 +39,7 @@ handleChangeTab(event) {
   render() {
     return (
       <div className="App">
-        <TabSelector handleChangeTab={this.handleChangeTab} />
+        <TabSelector handleChangeTab={this.handleChangeTab} activeId={this.state.activeId} />
         <div className="App-content">
           {
             this.getTabContent()
